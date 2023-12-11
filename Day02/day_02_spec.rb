@@ -14,7 +14,23 @@ RSpec.describe Day02 do
     end
 
     context 'with puzzle input' do
-      let(:filename) { 'input.txt' }
+      let(:filename) { 'input_day_02.txt' }
+
+      it 'returns the expected solution' do
+        expect(subject).to eq(2449)
+      end
+    end
+  end
+
+  context 'part2' do
+    subject { part2(filename) }
+
+    it 'returns the expected solution' do
+      expect(subject).to eq(2286)
+    end
+
+    context 'with puzzle input' do
+      let(:filename) { 'input_day_02.txt' }
 
       it 'returns the expected solution' do
         expect(subject).to eq(nil)
